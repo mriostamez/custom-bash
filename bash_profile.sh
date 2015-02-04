@@ -3,10 +3,7 @@
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
-alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 alias ls='ls -alGFh'
-alias pbcopy='xclip -selection clipboard'
-alias pbpaste='xclip -selection clipboard -o'
 
 function prompt {
   local BLACK="\[\033[0;30m\]"
@@ -27,8 +24,8 @@ function prompt {
   local WHITEBOLD="\[\033[1;37m\]"
   local RESETCOLOR="\[\e[00m\]"
 
-  export PS1="\n$RED\u $PURPLE@ $GREEN\w\n $BLUE[\#] → $RESETCOLOR"
-  export PS2="| → $RESETCOLOR"
+  export PS1="\n$RED\u $WHITEBOLD@ $CYAN\H $GREEN\w $WHITEBOLD> $RESETCOLOR"
 }
 
 prompt
+
