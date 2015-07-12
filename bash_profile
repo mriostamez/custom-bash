@@ -3,7 +3,7 @@
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
-alias ls='ls -alGFh'
+alias ls='ls -alRGFh'
 
 function prompt {
   local BLACK="\[\033[0;30m\]"
@@ -28,4 +28,3 @@ function prompt {
 }
 
 prompt
-
